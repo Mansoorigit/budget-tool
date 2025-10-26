@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 My Budget Tracker</h1>
+    <p>Automatically synced with Google Sheets</p>
+
+    <div id="balance" class="balance">Loading balance...</div>
+
+    <table id="expenseTable">
+      <thead>
+        <tr>
+          <th>Date</th><th>Junk</th><th>Diet</th><th>Personal</th><th>Work</th><th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
